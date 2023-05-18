@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserve Desk</title>
+    <style>
+        /* Styles for the main container */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #F5F5F5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Styles for the button */
+        button {
+            font-size: 20px;
+            font-weight: 500;
+            color: #FFFFFF;
+            background-color: #007BFF;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* Styles for the alert */
+        .alert {
+            background-color: #F8D7DA;
+            color: #721C24;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This desk is not reserved.</h1>
+        <button onclick="reserveDesk()">Reserve Desk</button>
+        <div id="alert" class="alert" style="display:none;">
+            <strong>Success!</strong> Desk reserved.
+        </div>
+    </div>
+    <script>
+        function reserveDesk() {
+            // Here you can add your code to reserve the desk
+            // Once the reservation is successful, show the alert
+            var alertDiv = document.getElementById("alert");
+            alertDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>
