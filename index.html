@@ -18,19 +18,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-
-        /* Styles for the button */
-        button {
-            font-size: 20px;
-            font-weight: 500;
-            color: #FFFFFF;
-            background-color: #007BFF;
-            border-radius: 5px;
-            padding: 10px 20px;
-            border: none;
-            margin-top: 20px;
-            cursor: pointer;
-        }
+     
 
         /* Styles for the alert */
         .alert {
@@ -45,19 +33,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>This desk is not reserved.</h1>
-        <button onclick="reserveDesk()">Reserve Desk</button>
-        <div id="alert" class="alert" style="display:none;">
-            <strong>Success!</strong> Desk reserved.
-        </div>
+        <h1>This desk is reserved and checked in.</h1>
     </div>
-    <script>
-        function reserveDesk() {
-            // Here you can add your code to reserve the desk
-            // Once the reservation is successful, show the alert
-            var alertDiv = document.getElementById("alert");
-            alertDiv.style.display = "block";
-        }
-    </script>
+    
 </body>
 </html>
